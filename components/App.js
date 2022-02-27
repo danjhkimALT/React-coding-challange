@@ -2,10 +2,7 @@ import { unsplash } from '../api';
 import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import InfiniteScroll from 'react-infinite-scroll-component';
-const Photos = dynamic(() => import('./Photos')).catch(err => {
-	// eslint-disable-next-line react/display-name
-	return () => <p>Failed to load...</p>;
-});
+const Photos = dynamic(() => import('./Photos'));
 
 const App = () => {
 	const [page, setPage] = useState(1);
