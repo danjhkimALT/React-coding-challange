@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Masonry from 'react-masonry-css';
 import ModalWindow from './Modal';
-import { useState, useCallback, useEffect } from 'react';
+import { useState } from 'react';
 
 const Photos = ({ pics }) => {
 	const [modalIsOpen, setIsOpen] = useState(false);

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Modal } from 'react-responsive-modal';
-import Image from 'next/image';
 
 const ModalWindow = ({ isOpen, onRequestClose, info }) => {
 	return (
