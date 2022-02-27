@@ -2,7 +2,7 @@ import { unsplash } from '../api';
 import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import InfiniteScroll from 'react-infinite-scroll-component';
-const Photos = dynamic(() => import('./photos'));
+const Photos = dynamic(() => import('./Photos'));
 
 const App = () => {
 	const [page, setPage] = useState(1);
