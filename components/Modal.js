@@ -8,7 +8,10 @@ const ModalWindow = ({ isOpen, onRequestClose, info }) => {
 			onClose={onRequestClose}
 			showCloseIcon={false}
 			center>
-			<div className='ui-box' onClick={onRequestClose}>
+			<div
+				data-testid='buttonTest'
+				className='ui-box'
+				onClick={onRequestClose}>
 				<div className='box' onClick={e => e.stopPropagation()}>
 					<span onClick={onRequestClose} className='close'>
 						&times;
@@ -33,6 +36,7 @@ const ModalWindow = ({ isOpen, onRequestClose, info }) => {
 							src={info.urls.regular}
 							alt={info.description ?? 'picture'}
 							layout='fill'
+							data-testid='img'
 						/>
 					</div>
 				</div>

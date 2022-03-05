@@ -28,6 +28,7 @@ const Photos = ({ pics }) => {
 				return (
 					<div
 						key={picture.id}
+						data-testid='picFrameid'
 						className='picFrame'
 						onClick={() => openModal(picture)}>
 						<img
